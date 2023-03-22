@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="style.css" />
+    
+   
+  </head>
+  <body>
+      <div id = "Carousel-page">
+        <img src="carousel-frame.png" alt="" class="frame" id="bushCarousel">
+      
+        <header id="heading">S T R E E T</header>
+        
+
+        <section class="wrapper">
+          
+          <img src="img/Street/street1.jpeg" alt="" id="main">
+          <div class="image-wrapper">
+            <img src="img/Street/street1.jpeg" alt="" class="imgCarousel">
+            <img src="img/Street/street2.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street3.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street4.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street5.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street11.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street6.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street7.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street8.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street9.jpg" alt="" class="imgCarousel">
+            <img src="img/Street/street10.jpg" alt="" class="imgCarousel">
+            </div>
+        </section>
+        
+      </div>
+      <a href="web.html" id = "home"> <img src="reset.png" alt=""></a>
+    <script>
+        let images = Array.from(document.getElementsByClassName("imgCarousel"))
+        let main = document.getElementById("main")
+
+        function updateImage(event){
+          let image = event.target
+
+          main.src = image.src
+        }
+
+        images.forEach(function(image){
+          image.addEventListener("click" , updateImage)
+        });
+    </script>
+    
+  </body>
+</html>

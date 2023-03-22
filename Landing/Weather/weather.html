@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    
+    <link rel="stylesheet" href="style-weather.css">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="logo">Forecast</a>
+          <form class="form" role="search">
+            <input id = "city" class="search-bar" type="search" placeholder="Enter City Name" aria-label="Search">
+            <button class="search-btn" type="submit" id="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<!-- .................................................Cards.................................................... -->
+      <main>
+        <h1 class="heading">Weather For <span id="cityName"></span></h1>
+       <div class="card-container">
+        <div class="card">
+            <h1 class="head">Temperature</h1>
+            <div class="cel"><span id="temp"></span>&#8451</div>
+            <ul>
+                <li>Min : <span id = "min_temp"></span></li>
+                <li>Max : <span id = "max_temp"></span></li>
+                <li>Feels like : <span id="feels_like"></span></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="head">Clouds</h1>
+            <div class="tem"><span id="cloud_pct"></span>&#37</div>
+            <ul>
+                <li>Humidity : <span id = "humidity"></span></li>
+                <li>Wind Speed : <span id = "wind_speed"></span></li>
+                <li>Wind Degrees : <span id="wind_degrees"></span></li>
+            </ul>
+        </div>
+        <a href="/Landing/web.html" id = "home"> <img src="reset.png" alt=""></a>
+       </div>
+       
+      </main>
+
+
+    <script src="script-weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body{
+  background-color: black;
+  background-size: cover;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(75, 1, 1, 0.6);
+  max-width: initial;
+}
+.navbar li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  padding: -1px;
+}
+.navbar li a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
+  font-size: 107%;
+  justify-content: center;
+}
+#Home{
+  position: relative;
+  right: 192px;
+}
+#About{
+  position: relative;
+  left: 175px;
+}
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid red;
+  justify-items: start;
+  
+}
+.mid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 3px solid green;
+  font-size: large;
+  flex-basis: 705px;
+  position: relative;
+  top: -17px;
+  
+}
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: end;
+  border: 3px solid yellow;
+  
+}
+.left img {
+  width: 60px;
+  filter: invert(100%);
+  height: 45px;
+  position: relative;
+  left: 13px;
+
+}
+#card{
+  background-image: url("img/Intro.jpg");
+}

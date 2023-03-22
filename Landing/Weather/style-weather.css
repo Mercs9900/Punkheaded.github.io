@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('ani.jpg') ;
+}
+.container-fluid{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background: linear-gradient(to bottom , blue , transparent);
+    justify-content: space-between;
+}
+.logo{
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: "Roboto",sans-serif;
+
+}
+.search-bar{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+    opacity: 0.6;
+}
+.search-btn{
+    padding: 5px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* ...........................................Cards........................................................ */
+.heading{
+    text-align: center;
+    color: blue;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+    padding: 30px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5em;
+    transition: 200ms;
+    opacity: 1;
+    -webkit-text-stroke: 1px black;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+.card{
+    background: linear-gradient(to top , blue , transparent);
+    padding: 70px;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 2px rgba(36, 1, 112, 0.75));
+    border: 0.0025px solid black;
+    
+}
+.head{
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#cloud_pct{
+    color: yellow;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+    padding: 10px;
+    /* font-size: 4em; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 200ms ease-in-out;
+}
+.cel{
+    color: yellow;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+    padding: 10px;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 200ms ease-in-out;
+}
+.tem{
+    color: yellow;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
+    padding: 10px;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 200ms ease-in-out;
+}
+li{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: underline;
+    list-style: none;
+    text-align: center;
+}
+#home{
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    z-index: 1000;
+    bottom: 250px;
+    transition: 300ms;
+  }
+  #home:hover{
+    transform: translateY(-10px);
+    
+  }
+  #home img{
+    padding: 0;
+    width: 10%;
+    height: 10%;
+    filter: invert(1);
+  }
+  #home img:hover{
+    filter: invert(0);
+  }

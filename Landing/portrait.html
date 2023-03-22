@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="style.css" />
+    
+   
+  </head>
+  <body>
+      <div id = "Carousel-page">
+        <img src="carousel-frame.png" alt="" class="frame" id="bushCarousel">
+      
+        <header id="heading">P O R T R A I T</header>
+        
+
+        <section class="wrapper">
+          
+          <img src="img/portrait/portrait1.jpg" alt="" id="main">
+          <div class="image-wrapper">
+            <img src="img/portrait/portrait1.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait2.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait3.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait4.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait5.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait6.jpg" alt="" class="imgCarousel">
+            <img src="img/portrait/portrait7.jpg" alt="" class="imgCarousel">
+            </div>
+        </section>
+        
+      </div>
+      <a href="web.html" id = "home"> <img src="reset.png" alt=""></a>
+      <script>
+        let images = Array.from(document.getElementsByClassName("imgCarousel"))
+        let main = document.getElementById("main")
+        function updateImage(event){
+            let pic = event.target
+            main.src = pic.src
+        }
+        images.forEach(function(pic){
+            pic.addEventListener("click",updateImage)
+        })
+      </script>

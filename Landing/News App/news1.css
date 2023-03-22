@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
+}
+body {
+  background: linear-gradient(to bottom, blue, black);
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  /* border: 2px solid red; */
+  width: 100vw;
+  height: 8vh;
+  align-items: center;
+  background: rgba(255, 0, 0, 0.893);
+  z-index: 1000;
+  position: relative;
+  border: 2px solid black;
+}
+h1 {
+  padding: 0 0 0 10px;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+#navItems {
+  display: flex;
+}
+#navItems li {
+  list-style: none;
+  position: relative;
+  left: 75vw;
+  /* border: 2px solid pink; */
+}
+#navItems li a {
+  text-decoration: none;
+  padding: 0 20px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+}
+/* ..........................................................Landing............................................................... */
+.landing{
+    background: url('paper.jpg');
+    z-index: 1000;
+    background-size: cover ;
+    width: 100vw;
+    height: 70vh;
+    top: 0px;
+    overflow: hidden;
+}
+.form{
+    width: 100vw;
+    height: 10vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20vh;
+    padding: 70px 0;
+    left: 0;
+    z-index: 1200;
+    /* border: 2px solid red; */
+    /* background: rgba(0, 0, 0, 0.712); */
+    filter: drop-shadow(2px 2px 4px bl);
+}
+.search-bar{
+    width: 30vw;
+    height: 7vh;
+    padding: 0 20px;
+    border-radius: 20px;
+    z-index: 1200;
+}
+.search-btn{
+    width: 8vw;
+    height: 7vh;
+    border-radius: 10px;
+    z-index: 1200;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+.search-btn:hover{
+    transform: translateY(-3px);
+}
+marquee{
+    font-size: 2em;
+    width: 100vw;
+    top: -140px;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    z-index: 1000;
+    --space: 4vw;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;    
+    color: black(255, 0, 0, 0.678);
+}
+/* .................................................container......................................................... */
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* z-index: 1000; */
+  position: relative;
+  /* overflow: scroll; */
+  margin: 0;
+  padding: 0;
+  top: -55vh;
+}
+#category {
+  position: absolute;
+  z-index: 1500;
+  color: wheat;
+  font-size: 4em;
+  width: 100vw;
+  display: flex;
+  justify-content: center ;
+  text-transform: uppercase;
+  top: 75vh;
+  text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.945);
+}
+#title {
+  position: absolute;
+  width: 70vw;
+  height: 10vh;
+  margin-top: 200px;
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 51px;
+  left: 40px;
+  color: #ffffff;
+  z-index: 1500;
+  text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+#content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 30px;
+  position: absolute;
+  color: #ffffff;
+  width: 65vw;
+  height: 40vh;
+  margin-top: 400px;
+  left: 40px;
+  text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+#read {
+  position: absolute;
+  width: 15vw;
+  height: 8vh;
+  left: 40px;
+  margin-top: 600px;
+  color: white;
+  background: #000aff;
+  border-radius: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.info{
+    margin-top: 400px;
+    margin-left: 6vw;
+
+}
+.info p {
+  position: relative;
+  left: 66vw;
+  margin-top: 0px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8em;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.605);
+  padding: 20px;
+  color: #ffffff;
+  width: 25vw;
+  height: 11vh;
+  top: 50vh;
+}
+#image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+#grad{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+}
+img{
+    overflow-clip-margin: 0px;
+    overflow: hidden;
+}

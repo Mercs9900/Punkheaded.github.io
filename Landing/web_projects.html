@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>web_projects</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="web_projects.css" />
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+		<!-- Add your custom HEAD content here -->
+
+	</head>
+	<body>
+		<div id="content-container" >
+			<a id="clock_link" href="clock_hover.html" >
+			<img src="skins/clock.png" class = 'icons' id="clock" />
+			</a>
+			<a id="weather_link" href="weather_hover.html" >
+			<img src="skins/weather.png" class = 'icons' id="weather" />
+			</a>
+			<a id="cal_link" href="calc_hover.html" >
+			<img src="skins/cal.png" class = 'icons' id="cal" />
+			</a>
+			<img src="skins/ellipse_1.PNG" alt="" id="ellipse_1">
+			<img src="skins/ellipse_2.png" id="ellipse_2" />
+			<img src="skins/vector.png" id="vector" />
+			<img src="skins/vector_clock.PNG" class = "vectorGrp" id="vector-clock" />
+			<img src="skins/vector_cal.PNG" class = "vectorGrp" id="vector-cal" />
+			<img src="skins/vector_weather.PNG" class = "vectorGrp" id="vector-weather" />
+		</div>
+
+			let ellipse_2 = document.getElementById("ellipse_2")
+			let clock = document.getElementById("clock")
+			let cal = document.getElementById("cal")
+			let weather = document.getElementById("weather")
+			let vector = document.getElementById("vector")
+			clock.addEventListener("mouseover",function(){
+				let val = window.onmouseover
+				ellipse_2.style.resize = val*2 - '200px'
+			})
+		</script> -->
+	</body>
+</html>

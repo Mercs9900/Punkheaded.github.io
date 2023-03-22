@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="clock">
+        <link rel="stylesheet" href="style.css">
+        <div id="ghadi"></div>
+        <!-- <img src="Clock.png" alt="" id ="clock"> -->
+        <div id="hour"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+      </div>
+
+        <img src="bush2.png" alt="" id ="bush">
+        <img src="bushtop.png" alt="" id ="bushtop">
+        
+        <img src="bushbottom.png" alt="" id="bushbottom">
+        <img src="stars2.png" alt="" id="stars2">
+      
+    </section>
+    <section id="clock">
+        <img src="bush2.png" alt="" id ="bush">
+        <img src="bushtop.png" alt="" id ="bushtop">
+        
+        <img src="bushbottom.png" alt="" id="bushbottom">
+        <img src="stars2.png" alt="" id="stars2">
+        <a href="web.html" id="back"> B A C K</a>
+    </section>
+
+    <script>
+        setInterval(() => {
+          d = new Date();
+          htime = d.getHours();
+          mtime = d.getMinutes();
+          stime = d.getSeconds();
+          hrotation = 30*htime + mtime/2;
+          mrotation = 6*mtime;
+          srotation = 6*stime;
+
+          hour.style.transform = `rotate(${hrotation}deg)`;
+          minutes.style.transform = `rotate(${mrotation}deg)`;
+          seconds.style.transform = `rotate(${srotation}deg)`;
+        },1000);
+        let bushtop = document.getElementById('bushtop');
+        let bushbottom = document.getElementById('bushbottom');
+        let stars2 = document.getElementById('stars2');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            bushtop.style.left = value*0.065 + 'px';
+            bushbottom.style.top = value*0.15 + 'px';
+            stars2.style.left = value*0.095 + 'px';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tune In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Encode+Sans:wght@100&family=Orbitron:wght@400;900&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Encode+Sans+Expanded:wght@500&family=Encode+Sans:wght@100&family=Orbitron:wght@400;900&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="playlist.css" />
+  </head>
+  <body>
+    <nav>
+      <p>PUNKHEADED</p>
+      <ul class="navbar">
+        <li><a href="https://music.youtube.com/browse/UCTPq_q3UIm_g0NiHB81vnoQ">MORE</a></li>
+        <li><a href="/Landing/web.html">PORTFOLIO</a></li>
+      </ul>
+    </nav>
+    <video autoplay muted loop id="myVideo">
+      <source src="videoplayback.webm" type="video/webm">
+    </video>
+    <div class="container">
+      <p id="small">Click on More <br><br> Access my playlists and.. </p>
+      <p id="large">Get lost into the Trance</p>
+      <div class="disc" >
+        <img src="disc.png" id="disc" alt="" />
+      </div>
+      <div class="vector">
+        <img src="vector.png" alt="" />
+      </div>
+      <div class="artist">
+      </div>
+      <img src="play.png" alt="" id="icon">
+      <audio controls id="audio">
+        <source src="Dawn FM - The Weeknd_128- [PagalWorld.NL].mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <section class="contact">
+
+    </section>
+
+    <script>
+      let disc = document.getElementById("disc")
+      let audio = document.getElementById("audio")
+      let icon = document.getElementById("icon")
+      icon.onclick = function(){
+        if (audio.paused){
+          audio.play();
+          icon.src = "pause.png";
+          disc.style.animation = "rotate 12s infinite linear";
+        }else{
+          audio.pause();
+          icon.src = "play.png"
+          disc.style.animation = "none"
+        }
+      }
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/*
+	@name gallery
+*/
+/* Only edit this if you know what you are doing! */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial";
+  overflow-x: hidden;
+}
+
+/* Only edit this if you know what you are doing! */
+img {
+  position: absolute;
+  display: block;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+
+/* Only edit this if you know what you are doing! */
+div {
+  position: absolute;
+}
+
+#content-container {
+  display: block;
+  position: relative;
+  width: 1920px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#_bg__gallery {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: #;
+  background: -webkit-linear-gradient(
+    -180deg,
+    rgba(15.94, 15.56, 15.37, 1) 0%,
+    rgba(40.37, 24.96, 15.71, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -180deg,
+    rgba(15.94, 15.56, 15.37, 1) 0%,
+    rgba(40.37, 24.96, 15.71, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    -180deg,
+    rgba(15.94, 15.56, 15.37, 1) 0%,
+    rgba(40.37, 24.96, 15.71, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -180deg,
+    rgba(15.94, 15.56, 15.37, 1) 0%,
+    rgba(40.37, 24.96, 15.71, 1) 100%
+  );
+  background: linear-gradient(
+    -180deg,
+    rgba(15.94, 15.56, 15.37, 1) 0%,
+    rgba(40.37, 24.96, 15.71, 1) 100%
+  );
+}
+
+#rectangle_5 {
+  top: 236px;
+  left: 125px;
+  width: 1670px;
+  height: 752px;
+  background: rgba(217, 217, 217, 1);
+}
+
+#_portrait {
+  top: 233px;
+  left: 120px;
+  width: 840px;
+  height: 379px;
+}
+
+#p_o_r_t_r_a_i_t {
+  top: 381px;
+  left: 249px;
+  width: 651px;
+  height: 128px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 83.199996948242px;
+  letter-spacing: 9.92px;
+  -ms-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -o-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+#_wildlife {
+  top: 612px;
+  left: 120px;
+  width: 835px;
+  height: 379px;
+}
+
+#_street {
+  top: 233px;
+  left: 955px;
+  width: 840px;
+  height: 379px;
+}
+
+#_film {
+  top: 612px;
+  left: 960px;
+  width: 840px;
+  height: 379px;
+}
+
+#g_a_l_l_e_r_y {
+  top: 42px;
+  left: 594px;
+  width: 834px;
+  height: 192px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 96px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 124.79999542236px;
+  letter-spacing: 14.88px;
+  color: #f5deb3;
+}
+
+#s_t_r_e_e_t {
+  top: 381px;
+  left: 1172px;
+  width: 476px;
+  height: 128px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 83.199996948242px;
+  letter-spacing: 9.92px;
+  -ms-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -o-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+#f_i_l_m {
+  top: 760px;
+  left: 1249px;
+  width: 322px;
+  height: 128px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 83.199996948242px;
+  letter-spacing: 9.92px;
+  -ms-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -o-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+#w_i_l_d_l_i_f_e {
+  top: 760px;
+  left: 277px;
+  width: 596px;
+  height: 128px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 83.199996948242px;
+  letter-spacing: 9.92px;
+  -ms-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -o-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 11px 5px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+/* Add your custom CSS here */
